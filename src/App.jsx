@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
+
+import UserCreation from "./components/UserCreation";
+
+import ReverseText from "./components/ReverseText";
+
+import DisplayPassword from "./components/DisplayPassword";
+import ChooseDye from "./components/ChooseDye";
+import InputPrivateData from "./components/InputPrivateData";
+import DynimicInput from "./components/DynamicView";
+
+import PronounceSytem from "./components/PronounceSystem";
+
+import CalculateNumbers from "./components/Calculation";
+import CheckField from "./components/CheckField";
+import AcceptTerms from "./components/AcceptTerms";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h2>1 - Homework</h2>
+      <UserCreation />
+      <hr />
+      <h2>2 - Homework</h2>
+      <ReverseText />
+      <hr />
+      <h2>3 - Homework</h2>
+      <DisplayPassword />
+      <hr />
+      <h2>4 - Homework</h2>
+      <ChooseDye />
+      <hr />
+      <h2>5 - Homework</h2>
+      <InputPrivateData />
+      <hr />
+      <h2>6 - Homework</h2>
+      <DynimicInput />
+      <hr />
+      <h2>7 - Homework</h2>
+      {/* <PronounceSytem /> */}
+      No homework has been added
+      <hr />
+      <h2>8 - Homework</h2>
+      <CalculateNumbers />
+      <hr />
+      <h2>9 - Homework</h2>
+      <CheckField />
+      <hr />
+      <h2>10 - Homework</h2>
+      <AcceptTerms />
+      <hr />
+    </div>
+  );
 }
 
-export default App
+export default App;

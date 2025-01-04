@@ -1,0 +1,50 @@
+.form {
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: #d4ac0d;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+.justBtn {
+    background-color: #9b59b6;
+}
+
+.saveBtn {
+    background-color: #16a085;
+}
+
+.newBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.btnDelete {
+    padding: 8px 10px;
+    background-color: red;
+}
+
+.newInput {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}

@@ -1,0 +1,99 @@
+.form {
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    border: 5px solid;
+    border-radius: 20px;
+    background-color: #5dade2;
+}
+
+.mainActions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
+
+.box label {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.box input {
+    width: 60%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box input::placeholder {
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    background-color: gray;
+    height: 20px;
+    position: relative;
+    transition: background .3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: aqua;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    transition: left .3s ease;
+}
+
+input[type="checkbox"]:checked::before {
+    left: 22px;
+}
+
+.actionBtns {
+    display: flex;
+    gap: 15px;
+}
+
+.wrapper {
+    margin-top: 40px;
+    background-color: #16a085;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.errorStyle {
+    color: red;
+}
+
+.successStyle {
+    color: blue;
+}
